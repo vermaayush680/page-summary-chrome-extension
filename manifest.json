@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Ayush Plugin",
+  "description": "Get active tabs or element on that pages source from a popup",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html"
+},
+"content_scripts": [{
+  "matches": [
+    "*://*/*"
+  ],
+  "js": ["script.js"]
+}],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
